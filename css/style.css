@@ -12,7 +12,8 @@ body {
   font-family: "Red Hat Display", sans-serif;
   font-size: 1.6rem;
   background-image: url(../images/pattern-background-mobile.svg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-color: var(--pale-blue);
 }
 
@@ -103,10 +104,15 @@ main {
 
 .order__plan .order__plan-title {
   color: var(--dark-blue);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 900;
   margin-right: 4rem;
   line-height: 1.5;
+}
+
+.order__plan h2 {
+  font-size: 1.6rem;
+  font-weight: 900;
 }
 
 .order__plan-img {
@@ -116,6 +122,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 0.7rem;
 }
 
 .order__plan-change a {
@@ -171,7 +178,9 @@ main {
 
   body {
     background-image: url(../images/pattern-background-desktop.svg);
-    background-size: cover;
-    background-position: top;
+  }
+
+  .order__plan .order__plan-title {
+    margin-right: 9rem;
   }
 }
